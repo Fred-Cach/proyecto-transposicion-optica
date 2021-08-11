@@ -1,18 +1,22 @@
+@charset "UTF-8";
 /* $color1: #2e5077;
 $color2: #4da1a9;
 $color3: #d7e8ba;
 $color4: #ffa630;
-$color5: #611c35; */
+$color5: #611c35; ç
 
+asdasdasdasdasdasdasdsa*/
 body {
   margin: 0px;
   background: linear-gradient(#4da1a9, #2e5077);
-  font-family: "Muli", sans-serif;
-}
+  font-family: "Muli", sans-serif; }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
+
+/* asdasdsa */
+
+/*# sourceMappingURL=styles.css.map */
