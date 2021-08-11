@@ -19,7 +19,16 @@ body {
     height: 300px;
   }
 
-  
+img{
+    width: 18px;
+}
 
+.container_form > div:nth-of-type(-n +2){
+    margin-bottom: 0.5rem;
+}
 
-  /* asdasdsa */
+form > div{
+    display: flex;
+    justify-content: space-between;
+}
+/* asdasdsa */
