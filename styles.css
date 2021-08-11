@@ -1,13 +1,12 @@
-/* $color1: #2e5077;
-$color2: #4da1a9;
-$color3: #d7e8ba;
-$color4: #ffa630;
-$color5: #611c35; */
-
 body {
+  min-height: 100vh;
   margin: 0px;
   background: linear-gradient(#4da1a9, #2e5077);
   font-family: "Muli", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .container {
@@ -15,4 +14,19 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 500px;
+  height: 300px;
+}
+
+img {
+  width: 18px;
+}
+
+.container_form > div:nth-of-type(-n + 2) {
+  margin-bottom: 0.5rem;
+}
+
+form > div {
+  display: flex;
+  justify-content: space-between;
 }
