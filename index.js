@@ -1,3 +1,19 @@
+const selectFixed = document.querySelectorAll("select.select_fixed");
+
+for (select of selectFixed) {
+  for (i = 16; i >= 0; i -= 0.25) {
+    let opt = document.createElement("option");
+    let strOpt = i.toFixed(2);
+    opt.value = strOpt;
+    opt.innerHTML = strOpt;
+
+    if (i == 0) {
+      opt.defaultSelected = true;
+    }
+    select.appendChild(opt);
+  }
+}
+
 sphereN.onchange = () => {
   let floatSphere = parseFloat(sphereN.value);
   let floatCylinder = parseFloat(cylinderN.value);
@@ -119,53 +135,3 @@ axis2.onchange = () => {
   axisP.value = axis1.value;
   axisN.value = axis2.value;
 };
-
-/* const matches = document.querySelectorAll("select, input");
-
-matches.forEach((element) => {
-  element.onchange = () => {
-    let floatSphereN = parseFloat(sphereN.value);
-    let floatSphereP = parseFloat(sphereP.value);
-    let floatCylinderN = parseFloat(cylinderN.value);
-    let floatCylinderP = parseFloat(cylinderP.value);
-
-    sphereP.value = (floatSphereN - floatCylinderN).toFixed(2);
-    sphereN.value = (floatSphereP + floatCylinderP).toFixed(2);
-
-    sphere1.value = sphereN.value;
-    sphere2.value = sphereP.value;
-
-    cylinderP.value = cylinderN.value;
-    cylinderN.value = cylinderP.value;
-
-    let intAxisN = parseInt(axisN.value);
-
-    if (intAxisN > 0 && intAxisN <= 180) {
-      if (intAxisN <= 90) {
-        axisP.value = intAxisN + 90;
-      } else {
-        axisP.value = intAxisN - 90;
-      }
-    } else {
-      axisN.value = 0;
-    }
-
-    axis1.value = axisP.value;
-    axis2.value = axisN.value;
-
-    let intAxisP = parseInt(axisP.value);
-
-    if (intAxisP > 0 && intAxisP <= 180) {
-      if (intAxisP <= 90) {
-        axisN.value = intAxisP + 90;
-      } else {
-        axisN.value = intAxisP - 90;
-      }
-    } else {
-      axisP.value = 0;
-    }
-
-    axis1.value = axisP.value;
-    axis2.value = axisN.value;
-  };
-}); */

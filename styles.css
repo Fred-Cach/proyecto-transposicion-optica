@@ -1,32 +1,97 @@
 body {
-  min-height: 100vh;
-  margin: 0px;
-  background: linear-gradient(#4da1a9, #2e5077);
+  margin: 0;
   font-family: "Muli", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
 }
 
+.container_form {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 40px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 700px;
+  padding: 60px 68px 40px;
+  width: 300px;
+  font-size: 16px;
+}
+
 .container {
+  background: linear-gradient(#4da1a9, #2e5077);
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   width: 500px;
   height: 300px;
+  padding: 0px 30px;
+  min-height: 100vh;
+  width: 100%;
 }
 
 img {
-  width: 18px;
-}
-
-.container_form > div:nth-of-type(-n + 2) {
-  margin-bottom: 0.5rem;
+  width: 20px;
 }
 
 form > div {
   display: flex;
+  flex-flow: column wrap;
+}
+
+form > div > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+
+form > div > div > * {
+  margin: 0px 0px;
+}
+
+select,
+input {
+  font-family: "Muli", sans-serif;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+input {
+  border-bottom: 2px solid white;
+  width: 65px;
+}
+
+select option {
+  margin: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  color: black;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+}
+
+.container_form--doubleC {
+  text-align: center;
+  flex-flow: nowrap;
   justify-content: space-between;
 }
+
+@media only screen and (max-width: 600px) {
+  .container_form {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0px;
+    width: 100%;
+  }
+}
+
+/* .container_form > div:nth-of-type(-n + 2) {
+  margin-bottom: 0.5rem;
+}*/
