@@ -62,20 +62,24 @@ input {
 }
 
 input {
-  border-bottom: 2px solid white;
-  width: 65px;
+  width: 60px;
+  text-align: center;
 }
 
 select option {
-  background: rgba(0, 0, 0, 0.2);
+  background: white;
   color: black;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
 }
 
 .container_form--doubleC {
   text-align: center;
   flex-flow: nowrap;
   justify-content: space-between;
+}
+
+.container_form--doubleC select,
+.container_form--doubleC input {
+  border-bottom: 0px;
 }
 
 @media only screen and (max-width: 600px) {
