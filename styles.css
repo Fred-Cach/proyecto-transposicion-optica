@@ -13,27 +13,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height: 700px;
-  padding: 60px 68px 40px;
+  padding: 40px 68px 40px;
   width: 300px;
-  font-size: 16px;
+  min-height: 700px;
+  font-size: 18px;
 }
 
 .container {
-  background: linear-gradient(#4da1a9, #2e5077);
+  background-image: linear-gradient(#4da1a9, #2e5077);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 500px;
-  height: 300px;
-  padding: 0px 30px;
   min-height: 100vh;
-  width: 100%;
+  padding: 0px 30px;
 }
 
 img {
-  width: 20px;
+  width: 22px;
 }
 
 form > div {
@@ -70,7 +67,6 @@ input {
 }
 
 select option {
-  margin: 10px;
   background: rgba(0, 0, 0, 0.2);
   color: black;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
