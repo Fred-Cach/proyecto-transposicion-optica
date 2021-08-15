@@ -1,7 +1,7 @@
 const selectFixed = document.querySelectorAll("select.select_fixed");
 
 for (select of selectFixed) {
-  for (i = 16; i >= 0; i -= 0.25) {
+  for (i = 16; i >= -16; i -= 0.25) {
     let opt = document.createElement("option");
     let strOpt = i.toFixed(2);
     opt.value = strOpt;
