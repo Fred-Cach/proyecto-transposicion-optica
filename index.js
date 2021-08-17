@@ -1,7 +1,22 @@
 const selectFixed = document.querySelectorAll("select.select_fixed");
+const selectFixed2 = document.querySelectorAll("select.select_fixed2");
 
 for (select of selectFixed) {
-  for (let i = 16; i >= -16; i -= 0.25) {
+  for (let i = 26; i >= -26; i -= 0.25) {
+    let opt = document.createElement("option");
+    let strOpt = i.toFixed(2);
+    opt.value = strOpt;
+    opt.innerHTML = strOpt;
+
+    if (i == 0) {
+      opt.defaultSelected = true;
+    }
+    select.appendChild(opt);
+  }
+}
+
+for (select of selectFixed2) {
+  for (let i = 26; i >= 0; i -= 0.25) {
     let opt = document.createElement("option");
     let strOpt = i.toFixed(2);
     opt.value = strOpt;
