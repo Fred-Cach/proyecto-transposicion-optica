@@ -16,7 +16,7 @@ for (select of selectFixed) {
 }
 
 for (select of selectFixed2) {
-  for (let i = 26; i >= 0; i -= 0.25) {
+  for (let i = 8; i >= 0; i -= 0.25) {
     let opt = document.createElement("option");
     let strOpt = i.toFixed(2);
     opt.value = strOpt;
